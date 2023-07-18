@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: #FFF;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+.nav-title {
+    font-size: 2rem;
+}
+
+.navbar img {
+    height: 27%;
+
+}
+
+.menus {
+    display: flex;
+    align-items: center;
+}
+
+.menus li {
+    list-style: none;
+
+}
+
+.menus li>a {
+    text-decoration: none;
+    color: #3C354F;
+    margin-left: 20px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 500;
+
+}
+
+.menu-item {
+    background-color: #E7E6E9;
+    padding: 10px 20px;
+
+}
+
+.fa-brands {
+    margin-left: 10px;
+
+}
+
+.fa-youtube {
+    color: red;
+    font-size: 20px;
+}
+
+.fa-tiktok {
+    font-size: 16px;
+}
+
+/* media query for tablet  */
+
+@media screen and (max-width:768px){
+
+    .nav-container{
+        flex-direction: column;
+    }
+    .menus{
+      margin: 0 auto;
+    }
+    .navbar img {
+        width: 60px;
+      
+      }
+}
+
+/* media query for mobile phone */
+@media screen and (max-width:425px) {
+    .nav-container,
+    .menus {
+       flex-direction: column;
+    
+    }  
+    .menus li{
+        margin-bottom: 20px;
+    }
+    .navbar img {
+        width: 60px;
+      
+      }
+}
