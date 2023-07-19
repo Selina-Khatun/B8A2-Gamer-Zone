@@ -8,10 +8,15 @@ body {
     font-family: 'Work Sans', sans-serif;
 }
 
+/* navbar section styles */
+
 .nav-container {
     display: flex;
     justify-content: space-around;
     background-color: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+
+
 
 }
 
@@ -20,10 +25,15 @@ body {
     justify-content: center;
     gap: 10px;
     align-items: center;
+    margin-right: 250px;
 }
 
 .nav-title {
     font-size: 2rem;
+}
+
+.text-pink {
+    color: #FF42A5;
 }
 
 .navbar img {
@@ -71,34 +81,121 @@ body {
     font-size: 16px;
 }
 
+
+/* banner section styles */
+.banner {
+    background-image: url("../images/Group\ 144.png");
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-position: left;
+
+}
+
+.banner-container {
+    width: 80%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: 0px auto;
+    align-items: center;
+}
+
+.banner-photo img {
+
+  width: 540px;
+}
+
+
+.banner-info h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0px;
+}
+
+.banner-info h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    background-image: linear-gradient(to bottom, #F948B2, #8758F1);
+    color: transparent;
+    -webkit-background-clip: text;
+    margin: 0px;
+    padding: 0px;
+}
+
+.banner-info p {
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.fa-regular,
+.fa-download {
+    font-size: 0.8rem;
+    color: #FF42A5;
+    margin-right: 8px;
+}
+
+.fa-user-group {
+    font-size: 0.8rem;
+    color: #706f70;
+    margin-right: 8px;
+}
+
+
+.btn {
+    padding: 12px 24px;
+    border-radius: 23px;
+    text-transform: uppercase;
+    color: #FFF;
+    border: none;
+    margin: 20px 0px;
+}
+
+.btn.pink {
+    background-color: #F948B2;
+}
+
+.btn.skyblue {
+    background-color: #4EC5F7;
+}
+
 /* media query for tablet  */
 
-@media screen and (max-width:768px){
 
-    .nav-container{
+
+@media screen and (max-width:768px) {
+
+    .nav-container {
         flex-direction: column;
     }
-    .menus{
-      margin: 0 auto;
+
+    .menus ,
+    .navbar{
+        margin: 0 auto;
     }
+
     .navbar img {
         width: 60px;
-      
-      }
+
+    }
+   
 }
 
 /* media query for mobile phone */
 @media screen and (max-width:425px) {
+
     .nav-container,
     .menus {
-       flex-direction: column;
-    
-    }  
-    .menus li{
+        flex-direction: column;
+
+    }
+
+    .menus li {
         margin-bottom: 20px;
     }
+
     .navbar img {
         width: 60px;
-      
-      }
+
+    }
 }
