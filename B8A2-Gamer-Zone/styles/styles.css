@@ -84,11 +84,9 @@ body {
 
 /* banner section styles */
 .banner {
-    background-image: url("../images/Group\ 144.png");
-    background-blend-mode: overlay;
+    background-image: url("../images/Group\ 14.png");
     background-repeat: no-repeat;
-    background-position: left;
-
+    background-size: 600px 700px;
 }
 
 .banner-container {
@@ -102,7 +100,7 @@ body {
 
 .banner-photo img {
 
-  width: 540px;
+    width: 540px;
 }
 
 
@@ -167,10 +165,11 @@ body {
 
     .nav-container {
         flex-direction: column;
+        box-shadow: none;
     }
 
-    .menus ,
-    .navbar{
+    .menus,
+    .navbar {
         margin: 0 auto;
     }
 
@@ -178,7 +177,30 @@ body {
         width: 60px;
 
     }
-   
+/* navbar responsive styles end */
+    
+    .banner {
+        background-image: none;
+    }
+
+    .banner-container {
+
+        flex-direction: column;
+
+    }
+.banner-info{
+    background-image: url("../images/Group\ 14.png");
+    background-repeat: no-repeat;
+    background-size: 500px 500px; 
+    padding: 15%;
+    zoom: 80%;
+}
+.banner-photo img{
+    width: 100%;
+    margin: 5px;
+}
+/* banner section responsive styles end */
+
 }
 
 /* media query for mobile phone */
@@ -198,4 +220,30 @@ body {
         width: 60px;
 
     }
+
+    /* navbar responsive styles end */
+    .banner {
+        background-position: none;
+    }
+
+    .banner-container {
+
+        flex-direction: column;
+
+    }
+    .banner-photo img{
+        width: 100%;
+        margin: 5px;
+    }
+    .banner-info{
+        background-image: url("../images/Group\ 14.png");
+        background-repeat: no-repeat;
+        background-size: 460px 440px;
+        padding: 20%;
+        zoom: 70%;
+        
+    }
+/* banner section responsive styles end */
+
+
 }
