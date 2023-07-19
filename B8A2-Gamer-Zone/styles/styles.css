@@ -268,6 +268,47 @@ body {
     padding: 40px;
 }
 
+/* button icon section styles */
+.icon-section {
+    width: 80%;
+    padding-bottom: 5%;
+}
+
+.icon-container {
+    display: grid;
+    gap: 1%;
+    width: 80%;
+    margin: 0px auto;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.icon {
+    width: 200px;
+    padding-left: 5px;
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    gap: 5%;
+    /* padding: 3%; */
+
+}
+
+.icon-container :nth-child(n+6) {
+    margin-left: 50%;
+}
+
+.icon:hover {
+    background: #FFF;
+    border: 1px solid palevioletred;
+    border-radius: 40px;
+    color: palevioletred;
+}
+
+.icon img {
+    width: 17%;
+    /* padding-left: 15%; */
+}
+
 /* footer section styles */
 
 footer {
@@ -300,7 +341,6 @@ footer {
 }
 
 .social-links {
-    /* padding: 20px; */
     margin: 23px;
 }
 
@@ -413,6 +453,27 @@ footer {
 
     /* Play Instantly, section responsive styles end */
 
+    .icon-container {
+
+        grid-template-columns: repeat(3, 3fr);
+
+    }
+
+
+    .icon {
+        width: 100%;
+
+        font-size: 0.6rem;
+
+    }
+
+    .icon-container :nth-child(n+6) {
+        margin-left: 0%;
+    }
+
+    .icon-section {
+        width: 100%;
+    }
     .footer-info {
 
         width: 100%;
@@ -422,7 +483,7 @@ footer {
     }
 
     .footer-terms {
-     
+
         grid-template-areas:
             "p p"
             "p p";
@@ -512,6 +573,34 @@ footer {
         text-align: center;
     }
 
+    /* --------------------------- */
+    .icon-container {
+
+        grid-template-columns: repeat(3, 3fr);
+
+    }
+
+
+    .icon {
+        width: 100%;
+
+        font-size: 0.6rem;
+
+    }
+
+    .icon-container :nth-child(n+6) {
+        margin-left: 0%;
+    }
+
+    .icon-section {
+        width: 100%;
+    }
+    /* .icon:hover {
+        background: #FFF;
+        border: 1px solid palevioletred;
+        border-radius: 40px;
+        color: palevioletred;
+    } */
     /* footer section responsive styles */
     .footer-title img {
         width: 20%;
@@ -534,9 +623,10 @@ footer {
     }
 
     .footer-terms {
-     
+
         grid-template-areas:
             "p p"
             "p p";
     }
+
 }
