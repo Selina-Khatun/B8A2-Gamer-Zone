@@ -251,13 +251,13 @@ body {
 }
 
 .instant-photo img {
-    width: 70%;
+    width: 67%;
 
 }
 
 .instant-logo img {
     position: relative;
-    width: 38%;
+    width: 34%;
     bottom: 200px;
     right: 15%;
 }
@@ -266,6 +266,75 @@ body {
     margin-top: 35px;
     text-align: right;
     padding: 40px;
+}
+
+/* footer section styles */
+
+footer {
+
+    margin-top: 0px;
+    background-color: #0B0223;
+    color: #FFF;
+}
+
+.footer-container {
+    width: 70%;
+    padding: 65px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.footer-title {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+.footer-info {
+    display: grid;
+    grid-template-areas: "p p p p p p";
+    font-size: 0.7rem;
+    width: 70%;
+    margin: 10px auto;
+}
+
+.social-links {
+    /* padding: 20px; */
+    margin: 23px;
+}
+
+.social-links .fa-brands {
+    font-size: 1.8rem;
+
+    margin: 10px;
+    color: #FFF;
+}
+
+.social-links .fa-facebook {
+    color: rgb(60, 60, 173);
+}
+
+.social-links .fa-youtube {
+    color: rgb(233, 23, 23);
+}
+
+.footer-title img {
+    width: 8%;
+}
+
+.footer-terms {
+    display: grid;
+    width: 70%;
+    margin: 0px auto;
+    grid-template-areas: "p p p p p";
+    font-size: 0.6rem;
+    color: rgba(255, 255, 255, 0.60);
+}
+
+.text-small {
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.60);
 }
 
 /* media query for tablet ------------- */
@@ -340,6 +409,23 @@ body {
         margin-top: 0px;
         padding-top: 0px;
         text-align: center;
+    }
+
+    /* Play Instantly, section responsive styles end */
+
+    .footer-info {
+
+        width: 100%;
+        grid-template-areas:
+            "p p p"
+            "p p p";
+    }
+
+    .footer-terms {
+     
+        grid-template-areas:
+            "p p"
+            "p p";
     }
 }
 
@@ -424,5 +510,33 @@ body {
         margin-top: 0px;
         padding-top: 0px;
         text-align: center;
+    }
+
+    /* footer section responsive styles */
+    .footer-title img {
+        width: 20%;
+    }
+
+    .footer-container {
+        width: 100%;
+    }
+
+    .footer-info {
+
+        width: 100%;
+        grid-template-areas:
+            "p p p"
+            "p p p";
+    }
+
+    .social-links {
+        width: 75%;
+    }
+
+    .footer-terms {
+     
+        grid-template-areas:
+            "p p"
+            "p p";
     }
 }
