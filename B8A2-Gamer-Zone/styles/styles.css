@@ -245,7 +245,7 @@ body {
 
 .instant-container {
     display: flex;
-    margin: 0px auto;
+    margin: 70px auto;
     justify-content: right;
     gap: 12%;
 }
@@ -261,12 +261,14 @@ body {
     bottom: 200px;
     right: 15%;
 }
-.instant-info{
-margin-top: 35px;
-text-align: right;
-padding: 40px;
+
+.instant-info {
+    margin-top: 35px;
+    text-align: right;
+    padding: 40px;
 }
-/* media query for tablet  */
+
+/* media query for tablet ------------- */
 
 
 
@@ -314,10 +316,34 @@ padding: 40px;
 
     /* banner section responsive styles end */
 
+    .instant-container {
+        flex-direction: column;
+    }
 
+    .instant-photo {
+        width: 90%;
+        margin-left: 17%;
+    }
+
+    .instant-photo img {
+        width: 70%;
+
+    }
+
+    .instant-logo img {
+        width: 30%;
+        bottom: 150px;
+        right: 10%;
+    }
+
+    .instant-info {
+        margin-top: 0px;
+        padding-top: 0px;
+        text-align: center;
+    }
 }
 
-/* media query for mobile phone */
+/* media query for mobile phone ------------- */
 @media screen and (max-width:425px) {
 
     .nav-container,
@@ -373,4 +399,30 @@ padding: 40px;
     }
 
     /* online section styles end */
+
+    .instant-container {
+        flex-direction: column;
+    }
+
+    .instant-photo {
+        width: 90%;
+        margin-left: 70px;
+    }
+
+    .instant-photo img {
+        width: 70%;
+
+    }
+
+    .instant-logo img {
+        width: 30%;
+        bottom: 100px;
+        right: 10%;
+    }
+
+    .instant-info {
+        margin-top: 0px;
+        padding-top: 0px;
+        text-align: center;
+    }
 }
