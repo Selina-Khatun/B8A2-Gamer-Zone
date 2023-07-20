@@ -193,6 +193,10 @@ body {
 
 }
 
+.card h5{
+    color: #534C64;
+    font-weight: 500;
+}
 
 .card-logo {
     position: relative;
@@ -236,7 +240,7 @@ body {
 }
 
 .play h5 {
-    color: violet;
+    color: #FF42A5;
     font-size: 1.5rem;
     margin: 0px auto;
 }
@@ -248,7 +252,9 @@ body {
     display: flex;
     flex-direction: row-reverse;
     justify-content: right;
-    gap: 10%;
+    gap: 13%; 
+    margin-top: 5%;
+
 
 }
 
@@ -311,6 +317,60 @@ body {
     text-align: left;
 
 }
+.text-unknown{
+    color: #ED4AB9;
+}
+/* careers section styles  */
+.careers-section {
+    background: #FF42A5;
+    color: #FFF;
+   width: 100%;
+   height: 83vh;
+   margin-bottom: 5%;
+}
+
+.careers-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+     margin: 0px auto;
+}
+
+.careers {
+ margin: 4% 0% 0% 13%;
+ 
+}
+
+.careers-photo {
+    width: 50%;
+    height: 570px;
+}
+
+
+.careers-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    margin-top: 18px;
+
+}
+
+
+.careers-grid h5 {
+    
+    margin: 5px 0px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.careers-grid h5:nth-child(2n+2) {
+    text-align: right;
+}
+
+.careers .white {
+    color: #F948B2;
+    font-size: 0.7rem;
+    font-weight: 800;
+}
 
 
 
@@ -325,7 +385,8 @@ body {
     display: grid;
     gap: 1%;
     width: 80%;
-    margin: 0px auto;
+    /* margin: 0px auto; */
+    margin: 0% auto 0% 17% ;
     grid-template-columns: repeat(5, 1fr);
 }
 
@@ -336,12 +397,11 @@ body {
     align-items: center;
     font-size: 0.9rem;
     gap: 5%;
-    /* padding: 3%; */
 
 }
 
 .icon-container :nth-child(n+6) {
-    margin-left: 50%;
+    margin: 6% 0% 0% 50%;
 }
 
 .icon:hover {
@@ -353,8 +413,8 @@ body {
 
 .icon img {
     width: 17%;
-    /* padding-left: 15%; */
 }
+
 
 /* footer section styles */
 
@@ -407,7 +467,7 @@ footer {
 }
 
 .footer-title img {
-    width: 8%;
+    width: 7%;
 }
 
 .footer-terms {
@@ -520,7 +580,7 @@ footer {
     .games-info {
         width: 100%;
         text-align: center;
-       margin: 0px auto;
+        margin: 0px auto;
     }
 
     /* Play games section responsive styles end */
@@ -673,9 +733,41 @@ footer {
         width: 100%;
         text-align: center;
     }
+/* careers section  responsive styles  end  */
+.careers-section {
+    /* background: #FF42A5; */
+    /* color: #FFF; */
+   width: 100%;
+   height: 70%;
+   margin: 0px auto;
+   /* margin-bottom: 5%; */
+}
+
+.careers-container {
+ 
+     flex-direction: column;
+}
+
+.careers {
+ /* margin: 4% 0% 0% 13%; */
+ width: 81%;
+ margin: 0px auto;
+ zoom: 70%;
+}
+
+.careers-photo {
+    width: 80%;
+    height: 80%;
+    margin: 10% auto 15%;
+  /* padding: ; */
+}
 
 
-    /* Play games responsive section styles  end */
+
+
+
+
+    /* Play games section responsive styles  end */
 
     .icon-container {
 
@@ -726,6 +818,11 @@ footer {
         grid-template-areas:
             "p p"
             "p p";
+    }
+    .text-small{
+        width: 50%;
+        margin: 0px auto;
+
     }
 
     /* footer section responsive styles end */
