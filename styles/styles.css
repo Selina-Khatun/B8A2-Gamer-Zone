@@ -193,7 +193,7 @@ body {
 
 }
 
-.card h5{
+.card h5 {
     color: #534C64;
     font-weight: 500;
 }
@@ -252,7 +252,7 @@ body {
     display: flex;
     flex-direction: row-reverse;
     justify-content: right;
-    gap: 13%; 
+    gap: 13%;
     margin-top: 5%;
 
 
@@ -317,28 +317,30 @@ body {
     text-align: left;
 
 }
-.text-unknown{
+
+.text-unknown {
     color: #ED4AB9;
 }
+
 /* careers section styles  */
 .careers-section {
     background: #FF42A5;
     color: #FFF;
-   width: 100%;
-   height: 83vh;
-   margin-bottom: 5%;
+    width: 100%;
+    height: 83vh;
+    margin-bottom: 5%;
 }
 
 .careers-container {
     display: flex;
     justify-content: space-around;
     width: 100%;
-     margin: 0px auto;
+    margin: 0px auto;
 }
 
 .careers {
- margin: 4% 0% 0% 13%;
- 
+    margin: 4% 0% 0% 13%;
+
 }
 
 .careers-photo {
@@ -356,7 +358,7 @@ body {
 
 
 .careers-grid h5 {
-    
+
     margin: 5px 0px;
     font-size: 0.8rem;
     font-weight: 500;
@@ -386,7 +388,7 @@ body {
     gap: 1%;
     width: 80%;
     /* margin: 0px auto; */
-    margin: 0% auto 0% 17% ;
+    margin: 0% auto 0% 17%;
     grid-template-columns: repeat(5, 1fr);
 }
 
@@ -584,7 +586,31 @@ footer {
     }
 
     /* Play games section responsive styles end */
+    .careers-section {
 
+        width: 100%;
+        height: 70%;
+        margin: 5% auto;
+    }
+
+    .careers-container {
+
+        flex-direction: column;
+    }
+
+    .careers {
+        width: 65%;
+        margin: 0px auto;
+        /* zoom: 70%; */
+    }
+
+    .careers-photo {
+        width: 80%;
+        height: 80%;
+        margin: 5% auto 10%;
+    }
+
+    /* careers section  responsive styles  end  */
 
     .icon-container {
 
@@ -733,41 +759,35 @@ footer {
         width: 100%;
         text-align: center;
     }
-/* careers section  responsive styles  end  */
-.careers-section {
-    /* background: #FF42A5; */
-    /* color: #FFF; */
-   width: 100%;
-   height: 70%;
-   margin: 0px auto;
-   /* margin-bottom: 5%; */
-}
-
-.careers-container {
- 
-     flex-direction: column;
-}
-
-.careers {
- /* margin: 4% 0% 0% 13%; */
- width: 81%;
- margin: 0px auto;
- zoom: 70%;
-}
-
-.careers-photo {
-    width: 80%;
-    height: 80%;
-    margin: 10% auto 15%;
-  /* padding: ; */
-}
-
-
-
-
-
 
     /* Play games section responsive styles  end */
+
+    .careers-section {
+
+        width: 100%;
+        height: 70%;
+        margin: 0px auto;
+    }
+
+    .careers-container {
+
+        flex-direction: column;
+    }
+
+    .careers {
+        width: 81%;
+        margin: 0px auto;
+        zoom: 70%;
+    }
+
+    .careers-photo {
+        width: 80%;
+        height: 80%;
+        margin: 10% auto 15%;
+    }
+
+    /* careers section  responsive styles  end  */
+
 
     .icon-container {
 
@@ -819,7 +839,8 @@ footer {
             "p p"
             "p p";
     }
-    .text-small{
+
+    .text-small {
         width: 50%;
         margin: 0px auto;
 
