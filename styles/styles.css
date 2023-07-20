@@ -242,6 +242,20 @@ body {
     font-weight: 500;
 }
 
+.card-logo:hover>.overlay {
+    position: absolute;
+    top: 0;
+    width: 90%;
+    height: 99%;
+    left: 0;
+    background-color: #000;
+    opacity: 0.5;
+    z-index: 100;
+    display: block;
+    border: 3px solid #f8169e;
+    border-radius: 13px;
+}
+
 .card-logo {
     position: relative;
 }
@@ -260,11 +274,6 @@ body {
 
 .card:hover .play {
     display: block
-}
-
-.card-logo img:hover {
-    border: 3px solid #F948B2;
-    border-radius: 15px;
 }
 
 .play {
@@ -578,6 +587,32 @@ footer {
     }
 
     /* banner section responsive styles end */
+    
+
+    .sub-banner-container {
+        background-color: #FFF;
+    }
+
+    .sub-banner {
+
+        flex-direction: column;
+    }
+
+    .sub-banner-info h2 {}
+
+    .sub-banner-photo {
+        width: 100%;
+        margin: 0px auto;
+    }
+
+
+    .sub-banner-info {
+        text-align: center;
+        width: 100%;
+        zoom: 90%;
+    }
+
+    /* sub-banner section responsive styles end  */
 
     .instant-container {
         flex-direction: column-reverse;
@@ -739,19 +774,8 @@ footer {
     }
 
     /* banner section responsive styles end */
-    .online-card {
-        flex-direction: column;
-        align-items: center;
+   
 
-    }
-
-    .online-container {
-        zoom: 70%;
-
-    }
-
-    /* online section  responsive styles end */
-    
     .sub-banner-container {
         background-color: #FFF;
     }
@@ -775,9 +799,21 @@ footer {
         zoom: 90%;
     }
 
-    /* sub-banner section styles */
+    /* sub-banner section responsive styles end  */
 
+    .online-card {
+        flex-direction: column;
+        align-items: center;
 
+    }
+
+    .online-container {
+        zoom: 70%;
+
+    }
+
+    /* online section  responsive styles end */
+    
     .instant-container {
         flex-direction: column-reverse;
     }
