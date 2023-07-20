@@ -83,6 +83,7 @@ body {
 
 
 /* banner section styles */
+
 .banner {
     background-image: url("../images/Group\ 14.png");
     background-repeat: no-repeat;
@@ -267,6 +268,43 @@ body {
     text-align: right;
     padding: 40px;
 }
+
+/* play games section styles */
+
+
+.games-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+    width: 75%;
+    margin: 0px auto;
+}
+
+.games-photo {
+
+    width: 62%;
+}
+
+.games-photo img {
+    width: 70%;
+
+}
+
+.games-photo .games-logo {
+    position: relative;
+    width: 35%;
+    bottom: 23%;
+    left: 50%;
+}
+
+.games-info {
+    margin-top: 35px;
+    /* width: 40%; */
+    text-align: left;
+    /* padding: 40px; */
+}
+
+
 
 /* button icon section styles */
 .icon-section {
@@ -474,6 +512,7 @@ footer {
     .icon-section {
         width: 100%;
     }
+
     .footer-info {
 
         width: 100%;
@@ -595,6 +634,7 @@ footer {
     .icon-section {
         width: 100%;
     }
+
     /* .icon:hover {
         background: #FFF;
         border: 1px solid palevioletred;
