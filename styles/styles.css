@@ -246,27 +246,35 @@ body {
 
 .instant-container {
     display: flex;
-    margin: 70px auto;
+    flex-direction: row-reverse;
     justify-content: right;
-    gap: 12%;
+    gap: 10%;
+  
+}
+
+.instant-photo {
+
+    width: 46%;
+   
 }
 
 .instant-photo img {
-    width: 67%;
+    width: 70%;
 
 }
 
-.instant-logo img {
+.instant-photo .instant-logo {
     position: relative;
-    width: 34%;
-    bottom: 200px;
+    width: 30%;
+    bottom: 23%;
     right: 15%;
 }
 
 .instant-info {
     margin-top: 35px;
+    width: 40%;
     text-align: right;
-    padding: 40px;
+   
 }
 
 /* play games section styles */
@@ -299,9 +307,9 @@ body {
 
 .games-info {
     margin-top: 35px;
-    /* width: 40%; */
+   
     text-align: left;
-    /* padding: 40px; */
+   
 }
 
 
