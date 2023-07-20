@@ -158,6 +158,49 @@ body {
     background-color: #4EC5F7;
 }
 
+/* sub-banner section styles */
+
+.sub-banner-container {
+
+
+    background-color: #FFF9FC;
+}
+
+.sub-banner {
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sub-banner-info h2 {
+    color: #534C64;
+    padding-bottom: 15%;
+    font-size: 1.4rem;
+
+}
+
+.sub-banner-info p>.text-gray {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #534C64;
+
+}
+
+.sub-banner-photo {
+    width: 55%;
+    margin-left: 6%;
+}
+
+.sub-banner-photo img {
+    width: 100%;
+}
+
+.sub-banner-info {
+    text-align: end;
+}
+
 /* Online Games section styles */
 
 .online-info {
@@ -172,7 +215,8 @@ body {
 
 .description {
     padding: 0px;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
+    font-weight: 400;
     line-height: 1.3rem;
 }
 
@@ -618,6 +662,9 @@ footer {
 
     }
 
+    .footer-title img {
+        width: 13%;
+    }
 
     .icon {
         width: 100%;
@@ -675,11 +722,7 @@ footer {
         background-position: none;
     }
 
-    /* .banner-container {
 
-        flex-direction: column;
-
-    } */
 
     .banner-photo img {
         width: 100%;
@@ -708,6 +751,32 @@ footer {
     }
 
     /* online section  responsive styles end */
+    
+    .sub-banner-container {
+        background-color: #FFF;
+    }
+
+    .sub-banner {
+
+        flex-direction: column;
+    }
+
+    .sub-banner-info h2 {}
+
+    .sub-banner-photo {
+        width: 100%;
+        margin: 0px auto;
+    }
+
+
+    .sub-banner-info {
+        text-align: center;
+        width: 100%;
+        zoom: 90%;
+    }
+
+    /* sub-banner section styles */
+
 
     .instant-container {
         flex-direction: column-reverse;
