@@ -249,13 +249,13 @@ body {
     flex-direction: row-reverse;
     justify-content: right;
     gap: 10%;
-  
+
 }
 
 .instant-photo {
 
     width: 46%;
-   
+
 }
 
 .instant-photo img {
@@ -274,7 +274,7 @@ body {
     margin-top: 35px;
     width: 40%;
     text-align: right;
-   
+
 }
 
 /* play games section styles */
@@ -307,14 +307,15 @@ body {
 
 .games-info {
     margin-top: 35px;
-   
+
     text-align: left;
-   
+
 }
 
 
 
 /* button icon section styles */
+
 .icon-section {
     width: 80%;
     padding-bottom: 5%;
@@ -429,7 +430,8 @@ footer {
 
 @media screen and (max-width:768px) {
 
-    .nav-container {
+    .nav-container,
+    .banner-container {
         flex-direction: column;
         box-shadow: none;
     }
@@ -472,32 +474,57 @@ footer {
     /* banner section responsive styles end */
 
     .instant-container {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .instant-photo {
-        width: 90%;
-        margin-left: 17%;
-    }
 
-    .instant-photo img {
         width: 70%;
-
+        text-align: center;
+        margin: 0px auto;
+        padding: 10px;
     }
 
-    .instant-logo img {
-        width: 30%;
-        bottom: 150px;
-        right: 10%;
+
+    .instant-photo .instant-logo {
+        bottom: 130px;
+        right: 30%;
     }
 
     .instant-info {
-        margin-top: 0px;
-        padding-top: 0px;
+        width: 100%;
         text-align: center;
+        margin-top: 0px auto;
     }
 
     /* Play Instantly, section responsive styles end */
+
+    .games-container {
+        flex-direction: column;
+    }
+
+    .games-photo {
+
+        width: 90%;
+        margin: 0px auto;
+    }
+
+
+
+    .games-photo .games-logo {
+
+        bottom: 140px;
+        left: 50%;
+    }
+
+    .games-info {
+        width: 100%;
+        text-align: center;
+       margin: 0px auto;
+    }
+
+    /* Play games section responsive styles end */
+
 
     .icon-container {
 
@@ -538,6 +565,8 @@ footer {
 }
 
 /* media query for mobile phone ------------- */
+
+
 @media screen and (max-width:425px) {
 
     .nav-container,
@@ -560,11 +589,11 @@ footer {
         background-position: none;
     }
 
-    .banner-container {
+    /* .banner-container {
 
         flex-direction: column;
 
-    }
+    } */
 
     .banner-photo img {
         width: 100%;
@@ -592,35 +621,62 @@ footer {
 
     }
 
-    /* online section styles end */
+    /* online section  responsive styles end */
 
     .instant-container {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .instant-photo {
+
         width: 90%;
-        margin-left: 70px;
-    }
-
-    .instant-photo img {
-        width: 70%;
+        margin: 0px auto;
 
     }
 
-    .instant-logo img {
-        width: 30%;
-        bottom: 100px;
-        right: 10%;
+
+    .instant-photo .instant-logo {
+        bottom: 60px;
+        right: 35%;
     }
 
     .instant-info {
-        margin-top: 0px;
-        padding-top: 0px;
+        width: 100%;
+
+    }
+
+    /* Play Instantly responsive section styles  end */
+
+
+
+    .games-container {
+        flex-direction: column;
+    }
+
+    .games-photo {
+
+        width: 100%;
+    }
+
+    .games-photo img {
+        width: 95%;
+
+    }
+
+    .games-photo .games-logo {
+
+        bottom: 90px;
+        left: 70%;
+    }
+
+    .games-info {
+        width: 100%;
         text-align: center;
     }
 
-    /* --------------------------- */
+
+    /* Play games responsive section styles  end */
+
     .icon-container {
 
         grid-template-columns: repeat(3, 3fr);
@@ -643,13 +699,8 @@ footer {
         width: 100%;
     }
 
-    /* .icon:hover {
-        background: #FFF;
-        border: 1px solid palevioletred;
-        border-radius: 40px;
-        color: palevioletred;
-    } */
-    /* footer section responsive styles */
+    /* icon section responsive styles end   */
+
     .footer-title img {
         width: 20%;
     }
@@ -676,5 +727,7 @@ footer {
             "p p"
             "p p";
     }
+
+    /* footer section responsive styles end */
 
 }
